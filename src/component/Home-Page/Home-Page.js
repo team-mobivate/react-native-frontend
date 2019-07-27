@@ -11,7 +11,7 @@ import If from '../If/If';
 import NavigationContext from '../../context/navigation-context';
 import styles from './styles';
 
-const BACKEND_AUTH_URL = `https://mobby-backend.herokuapp.com/login/twitter`;
+const BACKEND_AUTH_URL = `https://mob-ivate.herokuapp.com/login/twitter`; // `https://mobby-backend.herokuapp.com/login/twitter`;
 
 /**
  * Initial Page of app, displays login view

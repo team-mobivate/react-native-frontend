@@ -5,8 +5,11 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import If from '../If/If';
 
-const FETCH_USER_GOALS_URL = 'https://mobby-backend.herokuapp.com/goals';
-const FETCH_DELETE_GOAL_URL = 'https://mobby-backend.herokuapp.com/deleteGoal';
+const FETCH_USER_GOALS_URL = `https://mob-ivate.herokuapp.com/goals`;
+// 'https://mobby-backend.herokuapp.com/goals';
+const FETCH_DELETE_GOAL_URL = `https://mob-ivate.herokuapp.com/deleteGoal`;
+// 'https://mobby-backend.herokuapp.com/deleteGoal';
+
 /**
  * React Component for Homepage of app
  *

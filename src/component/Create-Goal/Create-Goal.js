@@ -3,7 +3,8 @@ import { TextInput, View } from 'react-native';
 import { Button } from 'react-native-elements';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 
-const FETCH_CREATE_GOAL_URL = 'https://mobby-backend.herokuapp.com/createGoal';
+const FETCH_CREATE_GOAL_URL = `https://mob-ivate.herokuapp.com/createGoal`;
+// 'https://mobby-backend.herokuapp.com/createGoal';
 
 /**
  *  React Component for add goal screen
@@ -41,7 +42,9 @@ export default class CreateGoal extends React.Component {
    * @memberof CreateGoal
    */
   toggleStartDateTimePickerDisplay = () => {
-    this.setState({ isStartDateTimePickerVisible: !this.state.isStartDateTimePickerVisible });
+    this.setState((state) => ({
+      isStartDateTimePickerVisible: !state.isStartDateTimePickerVisible,
+    }));
   };
 
   /**
@@ -50,7 +53,9 @@ export default class CreateGoal extends React.Component {
    * @memberof CreateGoal
    */
   toggleEndDateTimePickerDisplay = () => {
-    this.setState({ isEndDateTimePickerVisible: !this.state.isEndDateTimePickerVisible });
+    this.setState((state) => ({
+      isEndDateTimePickerVisible: !state.isEndDateTimePickerVisible,
+    }));
   };
 
   /**
